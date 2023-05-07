@@ -1,0 +1,616 @@
+/*global*/
+:root
+{
+    --main-color: #FFB607;
+    --main-duration: 0.5s;
+}
+* 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: 'Raleway', sans-serif;
+}
+.container 
+{
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul
+{
+    list-style: none;
+    margin-top: 15px;
+}
+a
+{
+    text-decoration: none;
+}
+
+/*start header*/
+header nav 
+{
+    display: flex;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    background-image: url(../images/banner-bg.png);
+}
+header nav .logo
+{
+    flex-basis: 20%;
+}
+header nav .list
+{
+    flex-basis: 40%;
+}
+header nav .search
+{
+    margin-left: 70px;
+}
+header nav .list ul
+{
+    display: flex;
+}
+header nav .list ul li
+{
+    margin-left: 50px;
+    font-weight: bold;
+}
+header nav .list ul li a
+{
+    color: black;
+    transition: 0.5s;
+}
+header nav .list ul li a:hover
+{
+    color: var(--main-color);
+}
+header nav .search ul
+{
+    display: flex;
+}
+header nav .search ul li
+{
+    margin-left: 30px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+header nav .search ul li a
+{
+    color: black;
+    transition: 1s;
+}
+header nav .search ul li a:hover
+{
+    color: var(--main-color);
+}
+header .banner
+{
+    width: 100%;
+    background-image: url(../images/banner-bg.png);
+    height: auto;
+    padding-bottom: 50px;
+    background-size: 100%;
+}
+header .container .info
+{
+    text-align: center;
+}
+header .container .info h1
+{
+    padding: 10px;
+    padding-top: 70px;
+    margin-bottom: 10px;
+    font-size: 80px;
+}
+header .container .info p
+{
+    padding: 10px;
+    margin-bottom: 400px;
+}
+header .container .info a
+{
+    background-color: var(--main-color);
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    color: white;
+    text-transform:uppercase;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    transition: 1s;
+}
+header .container .info a:hover
+{
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/*start services*/
+.services
+{
+    padding-top: 100px;
+    margin-top: 20px;
+    height: 100vh;
+}
+.services .logo
+{
+    text-align: center;
+}
+.services .logo h1
+{
+    text-transform: uppercase;
+}
+.services .logo p
+{
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.services .type
+{
+    display: flex;
+    padding-top: 20px;
+}
+.services .type .content
+{
+    text-align: center;
+}
+.services .type .content img,
+.services .type .content h2,
+.services .type .content p
+{
+    margin-bottom: 20px;
+}
+.services .type .content h2
+{
+    text-transform: uppercase;
+}
+.services .type .content p
+{
+    margin-bottom: 40px;
+}
+.services .type .content a
+{
+    background-color: var(--main-color);
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    color: white;
+    text-transform:uppercase;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    transition: 1s;
+}
+.services .type .content a:hover
+{
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* start about */
+.about
+{
+    height: 75vh;
+    padding-top: 50px;
+    background-color: var(--main-color);
+}
+.about .container
+{
+    display: flex;
+}
+.about .container .info
+{
+    flex-basis: 60%;
+    padding: 30px;
+    color: white;
+}
+.about .container .info h1
+{
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.about .container .info p
+{
+    margin-bottom: 70px;
+}
+.about .container .info a
+{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.about .container .info a:hover
+{
+    color: black;
+    background-color: white;
+}
+.about .container .image
+{
+    flex-basis: 50%;
+    padding: 20px;
+}
+.about .container .image img
+{
+    width: 100%;
+}
+
+/* start furinture */
+.fur
+{
+    height: 100vh;
+}
+.fur .logo
+{
+    text-align: center;
+    padding: 50px;
+}
+.fur .logo h1
+{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.fur .info
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.fur .info .image
+{
+    flex-basis: 50%;
+    padding: 15px;
+}
+
+/* start who */
+.who
+{
+    height: 90vh;
+}
+.who .back
+{
+    height: 80%;
+    background-image: url(../images/bg-1.png);
+}
+.who .back .info
+{
+    padding: 50px;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+.who .back .info h1
+{
+    font-size: 40px;
+}
+.who .back .info h1,
+.who .back .info h3
+{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.who .back .info p
+{
+    margin-bottom: 100px;
+}
+.who .back .info a
+{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.who .back .info a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+/* start proj */
+.proj
+{
+    height: 80vh;
+}
+.proj .logo
+{
+    text-align: center;
+    padding: 20px;
+}
+.proj .logo h1
+{
+    text-transform: uppercase;
+}
+.proj .logo h1,
+.proj .logo p
+{
+    margin-bottom: 20px;
+}
+.proj .type
+{
+    display: flex;
+}
+.proj .type .image
+{
+    flex-basis: calc(100%/3);
+    padding: 15px;
+    position: relative;
+}
+.proj .type .image::before
+{
+    content: "";
+    position: absolute;
+    width: 91%;
+    opacity: 0;
+    height: 90%;
+    top: 15px;
+    transition: 0.5s;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+.proj .type .image:hover::before
+{
+    opacity: 70%;
+}
+.proj .type .image h3
+{
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+.proj .type .image a
+{
+    position: absolute;
+    bottom: 50%;
+    left: 30%;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+}
+.proj .type .image:hover a
+{
+    opacity: 80%;
+}
+.proj .type .image img
+{
+    width: 100%;
+}
+
+/* start test */
+.test
+{
+    height: 85vh;
+}
+.test .logo
+{
+    text-align: center;
+}
+.test .logo h1
+{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.test .logo p
+{
+    margin-bottom: 70px;
+}
+
+.test .clint
+{
+    display: flex;
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+#clint
+{
+    float: right;
+    margin-top: 20px;
+}
+.test .clint .image
+{
+    position: relative;
+}
+.test .clint .image .abs
+{
+    position: absolute;
+    bottom: 6px;
+    left: 45%;
+}
+.test .clint .image,
+.test .clint .info
+{
+    padding: 10px;
+}
+.test .clint .info h1
+{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/* start contact */
+.contact
+{
+    height: 100vh;
+    background-image: url(../images/contact-bg.png);
+}
+.contact .container h1
+{
+    text-transform: uppercase;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+.contact .info
+{
+    display: flex;
+}
+.contact .info .form
+{
+    flex-basis: 50%;
+}
+.contact .form input
+{
+    display: block;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contact .form input:focus
+{
+    outline: none;
+}
+.contact .form textarea
+{
+    display: block;
+    margin-bottom: 30px;
+    width: 95%;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.contact .form textarea:focus
+{
+    outline: none;
+}
+.contact .form button
+{
+    padding: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 30%;
+    margin-top: 10px;
+    color: darkgray;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact .form button:hover
+{
+    background-color: white;
+}
+.contact .info .image
+{
+    flex-basis: 50%;
+}
+.contact .info .image img
+{
+    width: 100%;
+}
+/* start grid */
+.grid
+{
+    height: 75vh;
+    background-color: #313131;
+    padding-top: 100px;
+}
+.grid .info
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+.grid .info .col
+{
+    width: calc(100%/1);
+    color: white;
+}
+.grid .info .col h2
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.grid .info .col p
+{
+    width: 90%;
+}
+.grid .info .col img
+{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.grid .sub
+{
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.grid .sub input
+{
+    border: none; 
+    border-bottom: 1px solid white;
+    background-color: #313131;
+    width: 30%;
+    margin-left: 60%;
+    height: 40px;
+}
+.grid .sub input:focus
+{
+    outline: 0;
+}
+.grid .sub button
+{
+    height: 40px;
+    margin: 0;
+    text-transform: capitalize;
+    background-color: #313131;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    cursor: pointer
+}
+
+footer
+{
+    height: 20vh;
+    padding-top: 40px;
+
+}
+footer .container
+{
+    text-align: center;
+}
+footer .link
+{
+    margin-bottom: 20px;
+}
